@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swiss Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            background-image: url('bg.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000;
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #3175bf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #1a3a60;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #87cefa;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <img src="logo.png" alt="Swiss Bank Logo" class="logo">
+
+            <h1>Welcome to Swiss Bank Limited</h1>
+
+            <a href="register.php" class="btn">Register</a>
+            <a href="login.php" class="btn">Login</a>
+
+            <div class="links">
+                <a href="login_admin.php">Admin</a>
+                <a href="login_manager.php">Manager</a><br><br>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

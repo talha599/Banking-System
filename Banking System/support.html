@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 18px; 
+            position: relative;
+        }
+
+        .background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('bg.png'); 
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        body > *:not(.background) {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            color: #222;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .back-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:hsl(138, 62.20%, 43.50%); 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #146c43; 
+}
+    </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div>
+    <h2>Contact Us</h2>
+    <p>
+        Address: 408/1 (Old KA 66/1), Kuratoli, Khilkhet, Dhaka 1229, Bangladesh <br>
+        Telephone: +88 02 841 4046-9; +88 02 841 4050 <br>
+        Fax: +88 02 841 2255 <br>
+        Email: support@swissbank.com <br>
+        Web: www.swissbank.ltd <br>
+        Facebook: www.facebook.com/swissbank.ltd
+    </p>
+
+    <a href="index.html" class="back-link">Go to Homepage</a>
+</div>
+
+</body>
+</html>
